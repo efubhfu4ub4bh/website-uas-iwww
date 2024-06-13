@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my familly</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/jquery-ui.css">
+
+    <style>
+        #stopwatch{
+            font-size: 40px;
+        }
+        #karakter{
+            position:absolute;
+            font-size: 40px;
+            color:blue;
+            height: 0.5em;
+            width: 0.5em;
+            top: 20px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        #playground{
+            height: 90px;
+            width: 500px;
+            border: 2px solid black;
+            position:absolute;
+            background-color: #fff;
+        }
+        
+        #textArea{
+            display: flex;
+            flex-direction: column;
+        }
+
+        p:hover{
+            cursor: pointer;
+            color: red;
+        }
+
+        .bola{
+            background-color: yellow;
+            padding: 20px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        #drag{
+            background-image: url(./motor.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100px;
+            height: 100px;
+        }
+        #finish_line{
+            margin-left: 200px;
+            background-color: black;
+            height:95vh;
+            width: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div align="left">
+        <img src="papa.jpg" alt="" width="300" height="400"> <br>
+        ini papaku, dia orang yang sabar dan sangat cinta keluarga dan super duper bucin sama mama <br>
+        papa orang yang sederhana, yang selalu tau kalau ada sesuatu dalam keluarga
+    </div>
+    <br><br>
+    <div align="right">
+        <img src="mama.jpg" alt="" width="300" height="400"><br>
+        ini mamaku, orang yang telah melahirkan aku beserta adikku. yang rela bangun pagi untuk masak nasi <br>
+        yang rela cari uang demi keluarganya, perempuan di rumah yang paling aku sayang dan aku hormati.
+    </div>
+    <br><br>
+    <div align="left">
+        <img src="adik.jpg" alt="" width="300" height="400"><br>
+        ini adikku, adik pertama dan terakhir. orang yang sangat bawel, yang suka bikin kesel tapi sekaligus buat kangen <br>
+        di umurnya yang sekarang dia udah cukup dewasa dibandingkan teman-temannya yang lain.
+    </div>
+    <br>
+    <center>
+        <img src="keluarga.jpg" alt="" width="300" height="400"><br>
+        ini foto keluargaku yang sangat bahagia
+    </center>
+
+    <hr size="10" color="black">
+
+    <div style="display: flex; flex-direction: row;">
+        <div>
+            
+            <input type="text" name="textBaru">
+    
+            <button id="submit">Submit</button>
+            <button id="delete" name="pop"> Delete Pop</button>
+            <button id="shifting" name="shift">Shift</button>
+            <div id="textArea">
+    
+            </div>
+    
+    
+            <div>
+                <h1>StopWatch</h1> 
+                <div id="stopwatch">
+                    <span id="menit">00</span>:<span id="detik">00</span>
+                </div>
+                <div style="display: flex;">
+                    <p id="start">Start</p> -------- <p id="stop">Stop</p>
+                </div>
+            </div>
+    
+            <div id="giveRespect">
+                
+            </div>
+            <button id="hilang">Hilang</button>
+            <button id="muncul">Muncul</button>
+            <div id="playground">
+                <span id="karakter">
+                    ^
+                </span>
+            </div>
+            
+            <div id="drag">
+                    
+            </div>
+        </div>
+        <div>
+            <div id="finish_line"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="jquery.js">
+    
+</script>
